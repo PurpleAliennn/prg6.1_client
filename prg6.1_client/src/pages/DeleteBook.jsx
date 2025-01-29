@@ -18,7 +18,7 @@ function DeleteBook() {
                     }
                 });
 
-                alert('Book deleted!');
+                alert('Book has been deleted!');
                 navigate('/');
 
             } catch(error) {
@@ -32,15 +32,10 @@ function DeleteBook() {
 
     return (
         <>
-            <div>
-
-                <h2> Do you truly wish to delete this book </h2>
-                <button
-                    onClick={DeleteBook}
-                >
-                    Delete Book
-                </button>
-
+            <div className= "deleteField">
+                <div className= "deleteCard">
+                    <h2> your book has been removed </h2>
+                </div>
             </div>
 
         </>

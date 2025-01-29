@@ -59,66 +59,68 @@ function FormComponent({}) {
 
     return (
 
-        <form onSubmit={handleSubmit}>
+        <div className= "formComponent">
+            <form onSubmit={handleSubmit}>
 
-            <div>
-                <label htmlFor="title"> Title: </label>
-                <input
-                    type="text"
-                    id="title"
-                    name="title"
-                    value={formData.title}
-                    onChange={handleInputChange}
-                />
-            </div>
+                <div>
+                    <label htmlFor="title"> Title: </label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        value={formData.title}
+                        onChange={handleInputChange}
+                    />
+                </div>
 
-            <div>
-                <label htmlFor="author"> Author:</label>
-                <input
-                    type="text"
-                    id="author"
-                    name="author"
-                    value={formData.author}
-                    onChange={handleInputChange}
-                />
-            </div>
+                <div>
+                    <label htmlFor="author"> Author:</label>
+                    <input
+                        type="text"
+                        id="author"
+                        name="author"
+                        value={formData.author}
+                        onChange={handleInputChange}
+                    />
+                </div>
 
-            <div>
-                <label htmlFor="description"> Description:</label>
-                <input
-                    type="text"
-                    id="description"
-                    name="description"
-                    value={formData.description}
-                    onChange={handleInputChange}
-                />
-            </div>
+                <div>
+                    <label htmlFor="description"> Description:</label>
+                    <input
+                        type="text"
+                        id="description"
+                        name="description"
+                        value={formData.description}
+                        onChange={handleInputChange}
+                    />
+                </div>
 
-            <div>
-                <label htmlFor="genre"> Genre:</label>
-                <input
-                    type="text"
-                    id="genre"
-                    name="genre"
-                    value={formData.genre}
-                    onChange={handleInputChange}
-                />
-            </div>
+                <div>
+                    <label htmlFor="genre"> Genre:</label>
+                    <input
+                        type="text"
+                        id="genre"
+                        name="genre"
+                        value={formData.genre}
+                        onChange={handleInputChange}
+                    />
+                </div>
 
-            <div>
-                <label htmlFor="pages"> Amount of pages:</label>
-                <input
-                    type="number"
-                    id="pages"
-                    name="pages"
-                    value={formData.pages}
-                    onChange={handleInputChange}
-                />
-            </div>
+                <div>
+                    <label htmlFor="pages"> Amount of pages:</label>
+                    <input
+                        type="number"
+                        id="pages"
+                        name="pages"
+                        value={formData.pages}
+                        onChange={handleInputChange}
+                    />
+                </div>
 
-            <button type="submit"> Submit</button>
+                <button type="submit"> Submit</button>
 
-        </form>
+            </form>
+        </div>
     );
 }
 

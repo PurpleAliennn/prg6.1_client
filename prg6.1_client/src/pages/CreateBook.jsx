@@ -3,7 +3,11 @@ import FormComponent from "../components/FormComponent.jsx";
 function CreateBook() {
 
     return(
-        <FormComponent> </FormComponent>
+
+        <div className= "createField" >
+            <h3> Add a new book </h3>
+            <FormComponent> </FormComponent>
+        </div>
     )
 
 }

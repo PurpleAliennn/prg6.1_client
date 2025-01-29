@@ -77,65 +77,70 @@ if (!books.title && !books.description && !books.author && !books.genre && !book
 }
 
 return (
-    <form onSubmit={handleSubmit}>
-        <div>
-            <label htmlFor="title"> Title: </label>
-            <input
-                type="text"
-                id="title"
-                name="title"
-                value={books.title}
-                onChange={handleInputChange}
-            />
+    <section className= "editField">
+        <h3> Edit book </h3>
+        <div className="formComponent">
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="title"> Title: </label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        value={books.title}
+                        onChange={handleInputChange}
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="author"> Author: </label>
+                    <input
+                        type="text"
+                        id="author"
+                        name="author"
+                        value={books.author}
+                        onChange={handleInputChange}
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="description"> Description: </label>
+                    <input
+                        type="text"
+                        id="description"
+                        name="description"
+                        value={books.description}
+                        onChange={handleInputChange}
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="genre"> Genre: </label>
+                    <input
+                        type="text"
+                        id="genre"
+                        name="genre"
+                        value={books.genre}
+                        onChange={handleInputChange}
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="pages"> Pages: </label>
+                    <input
+                        type="number"
+                        id="pages"
+                        name="pages"
+                        value={books.pages}
+                        onChange={handleInputChange}
+                    />
+                </div>
+
+                <button type="submit"> Save Changes</button>
+            </form>
         </div>
+    </section>
+        );
+        }
 
-        <div>
-            <label htmlFor="author"> Author: </label>
-            <input
-                type="text"
-                id="author"
-                name="author"
-                value={books.author}
-                onChange={handleInputChange}
-            />
-        </div>
-
-        <div>
-            <label htmlFor="description"> Description: </label>
-            <input
-                type="text"
-                id="description"
-                name="description"
-                value={books.description}
-                onChange={handleInputChange}
-            />
-        </div>
-
-        <div>
-            <label htmlFor="genre"> Genre: </label>
-            <input
-                type="text"
-                id="genre"
-                name="genre"
-                value={books.genre}
-                onChange={handleInputChange}
-            />
-        </div>
-
-        <div>
-            <label htmlFor="pages"> Pages: </label>
-            <input
-                type="number"
-                id="pages"
-                name="pages"
-                value={books.pages}
-                onChange={handleInputChange}
-            />
-        </div>
-
-        <button type="submit"> Save Changes </button>
-    </form>
-);
-}
-
-export default EditBook;
+        export default EditBook;

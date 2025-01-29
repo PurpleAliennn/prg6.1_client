@@ -1,7 +1,6 @@
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -40,3 +39,161 @@
 .read-the-docs {
   color: #888;
 }
+
+.bookCard {
+  width: 80vw;
+  border-radius: 10px;
+  background-color: #8FBC8B;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2vh;
+  color: black;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.cardContent button {
+  background-color: #1a1a1a;
+  color: beige;
+  border: none;
+}
+
+.cardContent button:hover {
+  background-color: #2E8B57;
+  color: #1a1a1a;
+  border: none;
+}
+
+h3 {
+  margin: 4px;
+}
+
+h4 {
+  margin: 4px;
+}
+
+h5 {
+  margin: 2px;
+}
+
+nav {
+  background-color: #8FBC8B;
+  width: 100vw;
+  height: 10vh;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+nav a {
+  color: #1a1a1a;
+}
+
+nav a:hover {
+  color: #2E8B57;
+  font-weight: bold;
+}
+
+.cardView {
+  display: flex;
+  justify-content: center;
+}
+
+.formComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formComponent input{
+  background-color: #8FBC8B;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  padding: 5px;
+  color: #1a1a1a;
+}
+
+.createField  {
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.detailView {
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.detailCard {
+  width: 80vw;
+  background-color: #8FBC8B;
+  color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.detailButtons {
+  height: 10vh;
+  width: 33vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.detailButtons button {
+  background-color: #8FBC8B;
+  color: #1a1a1a;
+}
+
+.detailButtons button:hover {
+  background-color: #2E8B57;
+  color: #1a1a1a;
+  border: none;
+}
+
+.editField {
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form button {
+  background-color: #8FBC8B;
+  color: #1a1a1a;
+}
+
+form button:hover {
+  background-color: #2E8B57;
+}
+
+.deleteField {
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteCard button {
+  background-color: #8FBC8B;
+  color: #1a1a1a;
+}
+
+.deleteCard button:hover {
+  background-color: #2E8B57;
+}
+
+

@@ -36,30 +36,32 @@ function BookDetail() {
 
     return (
         <>
-            <div>
-
-                <h3>
-                    Title: {books.title}
-                </h3>
-                <h4>
-                    By: {books.author}
-                </h4>
-                <h5>
-                    Genre: {books.genre}
-                </h5>
-                <h5>
-                    Amount of pages: {books.pages}
-                </h5>
-                <p>
-                    {books.description}
-                </p>
-
-                <Link to = {`/books/delete/${books.id}`}>
-                    <button> Delete book </button>
-                </Link>
-                <Link to = {`/books/edit/${books.id}`}>
-                    <button> Edit book </button>
-                </Link>
+            <div className= "detailView">
+                <div className= "detailCard">
+                    <h3>
+                        Title: {books.title}
+                    </h3>
+                    <h4>
+                        By: {books.author}
+                    </h4>
+                    <h5>
+                        Genre: {books.genre}
+                    </h5>
+                    <h5>
+                        Amount of pages: {books.pages}
+                    </h5>
+                    <p>
+                        {books.description}
+                    </p>
+                </div>
+                <div className= "detailButtons">
+                    <Link to = {`/books/delete/${books.id}`}>
+                        <button> Delete book </button>
+                    </Link>
+                    <Link to = {`/books/edit/${books.id}`}>
+                        <button> Edit book </button>
+                    </Link>
+                </div>
 
             </div>
         </>
