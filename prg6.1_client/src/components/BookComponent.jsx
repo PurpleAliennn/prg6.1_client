@@ -16,12 +16,6 @@ function BookComponent({item}) {
                     <h5>
                         Genre: {item.genre}
                     </h5>
-                    <h5>
-                        Amount of pages: {item.pages}
-                    </h5>
-                    <p>
-                        {item.description}
-                    </p>
 
                     <Link to = {`books/${item.id}`}>
                         <button> Details </button>
